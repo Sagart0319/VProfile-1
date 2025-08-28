@@ -8,6 +8,7 @@
     <version>v2</version>
     <name>Visualpathit VProfile Webapp</name>
     <url>http://maven.apache.org</url>
+
     <properties>
         <spring.version>4.2.0.RELEASE</spring.version>
         <spring-security.version>4.0.2.RELEASE</spring-security.version>
@@ -150,6 +151,13 @@
                         </goals>
                     </execution>
                 </executions>
+            </plugin>
+
+            <!-- ✅ Added: Maven WAR Plugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>3.3.2</version>
             </plugin>
         </plugins>
     </build>
